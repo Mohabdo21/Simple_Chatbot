@@ -1,6 +1,7 @@
 # Chatbot Project
 
 This repository contains the code for a simple chatbot trained on custom intents.
+Inspired from youtube channel **NeuralNine**, Thanks to Mr. Florian Dedov
 
 ## Files
 
@@ -18,6 +19,25 @@ This repository contains the code for a simple chatbot trained on custom intents
 2. Create a virtual environment: `python3 -m venv venv_bot`
 3. Activate the virtual environment: `source venv_bot/bin/activate`
 4. Install the dependencies: `pip install -r requirements.txt`
+
+## Troubleshooting
+
+- If you got error message indicating that the NLTK (Natural Language Toolkit) library is trying to use the ‘punkt’ tokenize:
+
+1. Open your Python environment terminal.
+2. Import the NLTK library by typing `import nltk`.
+3. Download the ‘punkt’ package by typing `nltk.download('punkt')`.
+
+```python
+import nltk
+nltk.download('punkt')
+```
+
+- Export the environment variable `TF_CPP_MIN_LOG_LEVEL` to suppress TensorFlow’s Warning messages:
+
+```bash
+export TF_CPP_MIN_LOG_LEVEL=2
+```
 
 ## Usage
 
