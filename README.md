@@ -1,7 +1,7 @@
 # Chatbot Project
 
 This repository contains the code for a simple chatbot trained on custom intents.
-Inspired from youtube channel **NeuralNine**, Thanks to Mr. Florian Dedov
+Inspired from youtube channel [**NeuralNine**](https://www.youtube.com/@NeuralNine), Thanks to Mr. Florian Dedov
 
 ## Files
 
