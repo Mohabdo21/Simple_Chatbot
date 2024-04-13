@@ -82,9 +82,7 @@ def create_training_data(documents, words, classes):
     for document in documents:
         bag = []
         word_patterns = document[0]
-        word_patterns = [
-                lemmatizer.lemmatize(word.lower()) for word in word_patterns
-                ]
+        word_patterns = [lemmatizer.lemmatize(word.lower()) for word in word_patterns]
         for word in words:
             bag.append(1 if word in word_patterns else 0)
 
@@ -119,11 +117,7 @@ def create_model(training_inputs, training_labels):
     sgd = SGD(learning_rate=0.01, momentum=0.9, nesterov=True)
     # Compiling the model with categorical crossentropy loss function
     # and accuracy metrics
-    model.compile(
-            loss="categorical_crossentropy",
-            optimizer=sgd,
-            metrics=["accuracy"]
-            )
+    model.compile(loss="categorical_crossentropy", optimizer=sgd, metrics=["accuracy"])
 
     # Training the model for 2000 epochs
     chat_model = model.fit(
@@ -133,7 +127,7 @@ def create_model(training_inputs, training_labels):
 
 
 def main():
-    """Main function to run the chatbot."""
+    """Main function to run the chatbot bodel training"""
     intents = load_intents()
     words, classes, documents = preprocess_data(intents)
     save_data(words, classes)
