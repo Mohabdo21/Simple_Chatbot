@@ -1,26 +1,150 @@
 {
   "intents": [
     {
-      "tag": "greeting",
+      "tag": "Programming Languages",
       "patterns": [
-        "Hi",
-        "How are you?",
-        "Is anyone there?",
-        "Hello",
-        "Good day",
-        "What's up",
-        "Hey",
-        "Greetings",
-        "Good morning",
-        "Good evening"
+        "C",
+        "C++",
+        "Java",
+        "Python",
+        "JavaScript",
+        "Ruby",
+        "Swift",
+        "Kotlin",
+        "PHP",
+        "Objective-C"
       ],
-      "responses": [
-        "Hello! How can I assist you today?",
-        "Hi there, how can I help?",
-        "Good day! What can I do for you?",
-        "Good to see you again!",
-        "Hello!"
-      ]
+      "responses": ["Programming Languages"]
+    },
+    {
+      "tag": "Web Development",
+      "patterns": [
+        "HTML",
+        "CSS",
+        "React",
+        "Angular",
+        "Vue.js",
+        "Node.js",
+        "Express.js",
+        "Django",
+        "Flask"
+      ],
+      "responses": ["Web Development"]
+    },
+    {
+      "tag": "Mobile App Development",
+      "patterns": [
+        "iOS Development",
+        "Android Development",
+        "React Native",
+        "Flutter"
+      ],
+      "responses": ["Mobile App Development"]
+    },
+    {
+      "tag": "Database Management",
+      "patterns": [
+        "SQL",
+        "MySQL",
+        "PostgreSQL",
+        "SQLite",
+        "MongoDB",
+        "Firebase"
+      ],
+      "responses": ["Database Management"]
+    },
+    {
+      "tag": "Version Control",
+      "patterns": ["Git", "SVN"],
+      "responses": ["Version Control"]
+    },
+    {
+      "tag": "Software Development Tools",
+      "patterns": [
+        "IDEs (e.g., Visual Studio Code, IntelliJ IDEA, Xcode)",
+        "Debugging Tools",
+        "Testing Frameworks"
+      ],
+      "responses": ["Software Development"]
+    },
+    {
+      "tag": "Operating Systems",
+      "patterns": ["Windows", "Linux", "macOS"],
+      "responses": ["Operating Systems"]
+    },
+    {
+      "tag": "Agile Methodologies",
+      "patterns": ["Scrum", "Kanban"],
+      "responses": ["Agile Methodologies"]
+    },
+    {
+      "tag": "Software Engineering Principles",
+      "patterns": [
+        "Object-Oriented Programming (OOP)",
+        "Design Patterns",
+        "Software Development Life Cycle (SDLC)"
+      ],
+      "responses": ["Software Engineering"]
+    },
+    {
+      "tag": "Problem Solving and Algorithms",
+      "patterns": [
+        "Data Structures",
+        "Algorithm Analysis",
+        "Dynamic Programming"
+      ],
+      "responses": ["Problem solving and Algorithms"]
+    },
+    {
+      "tag": "Cloud Computing",
+      "patterns": [
+        "Amazon Web Services (AWS)",
+        "Microsoft Azure",
+        "Google Cloud Platform (GCP)"
+      ],
+      "responses": ["Cloud Computing"]
+    },
+    {
+      "tag": "DevOps",
+      "patterns": [
+        "Continuous Integration (CI)",
+        "Continuous Deployment (CD)",
+        "Containerization (Docker, Kubernetes)"
+      ],
+      "responses": ["DevOps"]
+    },
+    {
+      "tag": "UI/UX Design",
+      "patterns": ["Adobe XD", "Sketch", "Figma"],
+      "responses": ["UI/UX Design"]
+    },
+    {
+      "tag": "Cybersecurity",
+      "patterns": ["Network Security", "Encryption", "Ethical Hacking"],
+      "responses": ["Cybersecurity"]
+    },
+    {
+      "tag": "Machine Learning",
+      "patterns": ["TensorFlow", "PyTorch", "Scikit-learn"],
+      "responses": ["Machine Learning"]
+    },
+    {
+      "tag": "Data Science",
+      "patterns": [
+        "Data Analysis",
+        "Data Visualization",
+        "Big Data Technologies"
+      ],
+      "responses": ["Data Science"]
+    },
+    {
+      "tag": "Blockchain",
+      "patterns": [
+        "Smart Contracts",
+        "Decentralized Applications (DApps)",
+        "Cryptocurrency Development"
+      ],
+      "responses": ["Blockchain"]
     },
     {
       "tag": "goodbye",
@@ -29,8 +153,6 @@
         "Goodbye",
         "I'm leaving",
         "Have a good day",
-        "Bye",
-        "Ciao",
         "See ya",
         "I'll be back",
         "Until next time"
@@ -41,181 +163,6 @@
         "Goodbye!",
         "Looking forward to our next conversation.",
         "Take care!"
-      ]
-    },
-    {
-      "tag": "programming",
-      "patterns": [
-        "What is programming?",
-        "What is coding?",
-        "Tell me about programming",
-        "Tell me about coding",
-        "What is software development?",
-        "What is a programming language?",
-        "What is Python?",
-        "What is Java?"
-      ],
-      "responses": [
-        "Programming, coding, or software development means writing computer code to automate tasks.",
-        "A programming language is a formal language comprising a set of instructions that produce various kinds of output.",
-        "Python is a high-level, interpreted programming language with easy syntax and dynamic semantics.",
-        "Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible."
-      ]
-    },
-    {
-      "tag": "small_talk",
-      "patterns": ["How are you doing?", "What's up?"],
-      "responses": [
-        "I'm doing well, thanks for asking! How about you?",
-        "Things are going great! What can I help you with today?"
-      ]
-    },
-    {
-      "tag": "resource",
-      "patterns": [
-        "Where can I learn to code?",
-        "Best way to learn to code",
-        "How can I learn programming?",
-        "Good programming resources",
-        "Can you recommend good coding resources?",
-        "Where can I learn Python?",
-        "Where can I learn Java?",
-        "Best online coding platforms"
-      ],
-      "responses": [
-        "Check out the ALX SE Course, it's comprehensive with a lot if practice",
-        "Codecademy and Coursera offer great online courses for learning programming languages.",
-        "For Python, you might find the Python documentation helpful. It's available on the official Python website.",
-        "For Java, the Oracle Java Documentation can be a good starting point."
-      ]
-    },
-    {
-      "tag": "thanks",
-      "patterns": [
-        "Thanks",
-        "Thank you",
-        "That's helpful",
-        "Awesome, thanks",
-        "Thanks for the help"
-      ],
-      "responses": [
-        "You're welcome!",
-        "No problem, happy to help!",
-        "Glad I could assist you."
-      ]
-    },
-    {
-      "tag": "noanswer",
-      "patterns": ["I don't know", "Not sure", "Maybe", "Not certain"],
-      "responses": [
-        "That's okay, let me know if you have any other questions.",
-        "No problem, can I assist with anything else?"
-      ]
-    },
-    {
-      "tag": "weather",
-      "patterns": [
-        "What's the weather like?",
-        "Tell me the weather",
-        "Is it going to rain today?",
-        "What's the temperature outside?",
-        "Check the weather for me"
-      ],
-      "responses": [
-        "I'm sorry, I currently do not have the capability to provide real-time weather information."
-      ]
-    },
-    {
-      "tag": "joke",
-      "patterns": [
-        "Tell me a joke",
-        "Do you know any jokes?",
-        "Make me laugh",
-        "I need a laugh"
-      ],
-      "responses": [
-        "Why don't scientists trust atoms? Because they make up everything!",
-        "Why did the scarecrow win an award? Because he was outstanding in his field!",
-        "Why don't some fish play piano? Because you can't tuna fish!"
-      ]
-    },
-    {
-      "tag": "compliment",
-      "patterns": [
-        "You're great",
-        "You're awesome",
-        "You're the best",
-        "I like you"
-      ],
-      "responses": [
-        "Thank you! I'm here to assist you.",
-        "That's very kind of you! How can I assist you further?"
-      ]
-    },
-    {
-      "tag": "insult",
-      "patterns": [
-        "You're terrible",
-        "You're the worst",
-        "I don't like you",
-        "Fuck You"
-      ],
-      "responses": [
-        "I'm sorry to hear that. How can I assist you better?",
-        "I apologize if I upset you. I'm here to help you."
-      ]
-    },
-    {
-      "tag": "help",
-      "patterns": ["Can you help me?", "I need help", "Can you assist me?"],
-      "responses": [
-        "Of course! I'm here to help. What do you need assistance with?",
-        "Sure! How can I assist you today?"
-      ]
-    },
-    {
-      "tag": "about_bot",
-      "patterns": [
-        "Tell me about yourself",
-        "Who are you?",
-        "What can you do?"
-      ],
-      "responses": [
-        "I'm a chatbot designed to assist you with various tasks and answer your questions.",
-        "I'm here to provide information and help you with anything you need. Feel free to ask!"
-      ]
-    },
-    {
-      "tag": "about_creator",
-      "patterns": [
-        "Who created you?",
-        "Who made you?",
-        "Who is your developer?"
-      ],
-      "responses": [
-        "I was created by a Mohannad Abdulaziz who is a Software Engineer.",
-        "My developers put a lot of effort into creating me to assist you efficiently."
-      ]
-    },
-    {
-      "tag": "feedback",
-      "patterns": [
-        "I have feedback",
-        "Feedback",
-        "I want to give feedback",
-        "How can I provide feedback?"
-      ],
-      "responses": [
-        "Your feedback is valuable to us! Please feel free to share any suggestions or comments you have.",
-        "We appreciate your feedback! Let us know how we can improve."
-      ]
-    },
-    {
-      "tag": "error",
-      "patterns": ["Error", "There is an error", "I'm having trouble"],
-      "responses": [
-        "I apologize for the inconvenience. Could you please provide more details about the error?",
-        "Let me help you troubleshoot the issue. What seems to be the problem?"
       ]
     }
   ]

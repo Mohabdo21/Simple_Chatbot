@@ -97,7 +97,7 @@ init()
 def main():
     """Main function to run the chatbot."""
     intents, words, classes, model = load_data()
-    print(Fore.GREEN + "Go! Bot is running!" + Style.RESET_ALL)
+    print(Fore.GREEN + "Go! Skill Recognition Bot is running!" + Style.RESET_ALL)
 
     while True:
         try:
@@ -106,11 +106,7 @@ def main():
             res = get_response(ints, intents)
             print(Fore.GREEN + res + Style.RESET_ALL)
             if ints[0]["intent"] == "goodbye":
-                print(
-                        Fore.GREEN
-                        + "Chatbot is shutting down..."
-                        + Style.RESET_ALL
-                        )
+                print(Fore.GREEN + "Chatbot is shutting down..." + Style.RESET_ALL)
                 break
         except Exception as e:
             logging.error(f"An error occurred: {e}")
